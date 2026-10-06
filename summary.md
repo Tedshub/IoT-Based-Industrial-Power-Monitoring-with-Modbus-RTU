@@ -1,0 +1,8 @@
+Implementasi Sistem Monitoring Energi Listrik Berbasis IoT dengan Protokol		September 2026
+Modbus RTU dan Dashboard Web Real-Time pada Power Meter FORT FCN300-3E4Y
+Proyek Sistem IoT & Web Dashboarding.
+●	Merancang sistem IoT untuk pemantauan konsumsi energi listrik tiga fasa secara real-time, dengan CT clamp sebagai sensor arus yang terpasang pada panel listrik dan terhubung ke Power Meter FORT FCN300-3E4Y untuk membaca parameter tegangan, arus, daya aktif/semu/reaktif, power factor, dan frekuensi.
+●	Mengimplementasikan protokol komunikasi industrial Modbus RTU melalui antarmuka RS485 menggunakan modul USB-to-RS485 sebagai jembatan komunikasi antara power meter dan mini PC yang dipasang langsung di dalam panel listrik.
+●	Mengembangkan program Python pada mini PC sebagai data collector yang membaca data secara periodik, menyimpannya ke file Excel lokal sebagai offline buffer, dan menyinkronkan data ke backend via REST API over HTTPS dengan mekanisme auto-sync saat koneksi pulih.
+●	Mengimplementasikan sistem heartbeat untuk memantau status online/offline perangkat IoT secara real-time, dengan deteksi otomatis kondisi offline jika sinyal ping terhenti melebihi 15 detik.
+●	Membangun web dashboard menggunakan Laravel sebagai backend dengan database MySQL untuk penyimpanan data pembacaan energi, dan React dengan Inertia.js sebagai frontend, menampilkan visualisasi data konsumsi energi listrik dan status koneksi perangkat secara real-time.
